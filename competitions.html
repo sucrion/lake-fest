@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>SLFest 2022 | Competitions</title>
+
+		<!-- external CSS link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://kit.fontawesome.com/48d97972cb.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<!-- Header -->
+		<header id="header" class="alt">
+			<h1><a href="index.html">SLF22 | Compete</a></h1>
+			<nav>
+				<a href="#menu" onclick="openNav()">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<div id="myNav" class="overlay">
+			<nav id="menu" class="overlay-content ">
+				<div class="inner">
+					<h2>Menu</h2>
+					<a href="index.html">Home</a>
+					<a href="calendar.html">Calendar</a>
+					<a href="vendors.html">Vendor List</a>
+					<a href="competitions.html">Competitions</a>
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				</div>
+			</nav>
+		</div>
+
+			<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<img src="default-monochrome.svg" alt="summer lake fest 2022 logo">
+					<p id="dates">July 23 - 31</p>
+						<p>A week of refreshing summer fun: food, music, dancing, competitions, and other events, all in the heart of the city!</p>
+				</div>
+			</section>
+
+		<div id="trans1"><img src="transShape1.svg" alt="style element"></div>
+		
+		<section id="summary">
+			<h2>Competitions</h2>
+			<p>If you're looking for a chance to show off, SLFest's competitions are a great place for it. Not only that, but thanks to our sponsors, you could bring home an amazing prize! Want to sign up? Fill out the form in person at the start of each event, or email us to ensure a spot!</p>
+		</section>
+
+		<div id="trans2"><img src="transShape2_ar.svg" alt="style element"><img src="transShape2_a.svg" alt="style element"></div>
+			
+		<section id="mainInfo">
+			<h2>Joining In</h2>
+			<div class="tabRow">
+				<a href="javascript:void(0)" onclick="openCity(event, 'Mental');">
+				  <div class="tablink infoLink">Mental</div>
+				</a>
+				<a href="javascript:void(0)" onclick="openCity(event, 'Physical');">
+				  <div class="tablink infoLink">Physical</div>
+				</a>
+				<a href="javascript:void(0)" onclick="openCity(event, 'Other');">
+				  <div class="tablink infoLink">Other</div>
+				</a>
+			</div>
+			<div id="Mental" class="infoContainer city" style="display:none">
+				<h3>Mental</h3>
+				<ul>
+					<li>
+						<details>
+							<summary>International Chess Tournament</summary>
+							<p>Our yearly International Chess Tournament is back and better than ever! Organized over three days and with support from the local chess club, get ready to play both regular and blitz chess.</p>
+						</details>
+					</li>
+					<li>
+						<details>
+							<summary>Trivia</summary>
+							<p>Have you been called a know-it-all? Love obscure facts? Read Wikipedia for fun? You've come to the right place: we're ready to reward you at our trivia evenings! Alone or in teams, you could win an all-expenses paid weekend trip to a beach resort!</p>
+						</details>
+					</li>
+					<li>
+						<details>
+							<summary>Speed Jigsaw</summary>
+							<p>For those with quick minds and quicker hands, we've got speed jigsaw, the popular event where you compete to see who can finish a 100-piece puzzle in the shorest time! And yes, you get to keep the puzzle if you finish!</p>
+						</details>
+					</li>
+				</ul>
+			</div>
+			
+			<div id="Physical" class="infoContainer city" style="display:none">
+				<h3>Physical</h3>
+				<ul>
+					<li>
+						<details>
+							<summary>Armwrestling</summary>
+							<p>A Summer Lake Fest classic, all about strength and endurance. Are you our next champion? If so, you could be the one to take home a gift card worth $100 to your choice of one of five sponsors!</p>
+						</details>
+					</li>
+					<li>
+						<details>
+							<summary>Ball Bounce</summary>
+							<p>The goal is to keep bouncing a ball as long as possible without using your hands and arms, or letting it touch the ground. Balancing is only allowed for a maximum of 3 seconds at a time - this is ball bouncing, not ball balancing, after all!</p>
+						</details>
+					</li>
+					<li>
+						<details>
+							<summary>Darts</summary>
+							<p>For those with perfect hand-eye coordination, we've got competitive darts! This event is 18+, and the first place prize is a custom car paintjob.</p>
+						</details>
+					</li>
+				</ul>
+			</div>
+			
+			<div id="Other" class="infoContainer city" style="display:none">
+				<h3>Other</h3>
+				<ul>
+					<li>
+						<details>
+							<summary>Talent Show</summary>
+							<p>If you can juggle, sing, do backflips, perform magic, or any other exciting thing you've got up your sleeve, this is the event for you! There are several categories and many prizes for each.</p>
+						</details>
+					</li>
+					<li>
+						<details>
+							<summary>Pie-Eating Contest</summary>
+							<p>Who doesn't love pie? You know what this is all about. It's also your chance to win some cool apparel and, if you get first place, a $50 gift card!</p>
+						</details>
+					</li>
+					<li>
+						<details>
+							<summary>Rap Battle</summary>
+							<p>Got good rhythm and better flow? Love wordplay and thinking on your feet? We'll give you a topic and let you impress our panel of professional hip hop judges! Prizes include an exclusive shirt, a night out at an amazing local restaurant, and even a recording session at one of the judges' music studios!</p>
+						</details>
+					</li>
+				</ul>
+			</div>
+
+			<div>
+				<h3>Prizes</h3>
+				<p>Want to know what you can win? Every competition has different prizes, so check the details for the one(s) you're participating in, but here's an overview:</p>
+				<ul id="prizeList">
+					<li>A weekend spa getaway</li>
+					<li>Shirts, hats, or other apparel</li>
+					<li>A night out at a local restaurant</li>
+					<li>Recording session at professional music studio</li>
+					<li>Free makeover (haircut & style, nails, and makeup)</li>
+					<li>Custom car paintjob</li>
+					<li>Professional photoshoot session</li>
+					<li>Gift cards worth at least $50</li>
+					<li>And many, many more!</li>
+				</ul>
+			</div>
+		</section>
+
+		<div id="trans3"><img src="transShape2_b.svg" alt="style element"><img src="transShape2_br.svg" alt="style element"></div>
+
+		<section id="contact">
+			<h2>Finding Us</h2>
+			<p>Summer Lake Fest 2022 takes place on <em>Lakeview Avenue</em>, between Maple Street and Williams Road.</p>
+			<h3>Contact</h3>
+			<address>
+				<i class="fa-solid fa-phone-flip"></i> 514-123-1234<br>
+				<i class="fa-solid fa-envelope"></i> contact@summerlakefest.com
+			</address>
+			<div id="socialMedia">
+				<a href="#"><i class="fa-brands fa-twitter"></i></a>
+				<a href="#"><i class="fa-brands fa-instagram"></i></a>
+				<a href="#"><i class="fa-brands fa-facebook"></i></a>
+			</div>
+		</section>
+
+		<footer>
+			<p>Design &copy; Alex</p>
+		</footer>
+
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>

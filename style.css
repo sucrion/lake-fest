@@ -1,6 +1,7 @@
 /* Box Model Hack */
 * {
-  box-sizing: border-box;
+     box-sizing: border-box;
+     text-decoration: none;
 }
 
 /* Clear fix hack */
@@ -22,21 +23,504 @@
 /*******************************************/
 
 body {
-
+     background-color: aliceblue;
+     background: linear-gradient(to bottom right, #33d6f0, #0076dd);
+     font-family: 'Barlow', sans-serif;
+     margin: 0;
+     padding: 0;
 }
 
+h1, h2, h3 {
+     font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+h1 {
+     font-style: italic;
+     font-weight: 300;
+}
+
+h2, section p {
+     margin: 0;
+}
+
+h2 {
+     padding-top: 1.5em;
+     font-size: 3em;
+}
+
+h3 {
+     padding: 0;
+     padding-bottom: 0.5em;
+     margin: 0;
+     font-size: 2em;
+}
+
+p {
+     padding: 1em 0;
+     line-height: 2em;
+}
+
+p, #summary a {
+     font-size: 1.1em;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+
+/* the top bit that hovers */
 header {
-
+     height: 4em;
+     width: 100%;
+     background: linear-gradient(to right, #33d6f0, #0076dd);
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     padding-bottom: 0.1em;
+     top: -5em;
+     position: fixed;
+     transition: 0.3s;
 }
 
+header a {
+     color: white;
+}
+
+nav a {
+     border: 2px solid rgba(255, 255, 255, 0.5);
+     padding: 0.7em 2em;
+     border-radius: 8px;
+}
+
+/* the MENU */
+
+.overlay {  
+     height: 100%;
+     width: 100%;
+     position: fixed; 
+     z-index: 1; 
+     left: 0;
+     top: 0;
+     background-color: rgb(0,0,0); /* Black fallback color */
+     background-color: rgba(0, 0, 0, 0.75); /* Black w/opacity */
+     overflow-x: hidden; /* Disable horizontal scroll */
+     transition: 0.5s; 
+     display: none;
+     justify-content: center;
+}
+
+.overlay h2 {
+     border-bottom: 2px dashed #004094;
+     padding-bottom: 0.5em;
+}
+
+.overlay-content {
+     position: relative;
+     top: 15%; 
+     width: 25em; 
+     height: fit-content;
+     text-align: center;
+     padding-bottom: 2em;
+}
+
+.inner {
+     justify-content: center;
+     align-items: center;
+}
+
+.overlay a {
+     padding: 1em 2em;
+     text-decoration: none;
+     color: white;
+     font-size: 1.5em;
+     display: block; 
+     transition: 0.3s; 
+     border: none;
+     border-radius: 0;
+}
+
+.overlay a:hover, .overlay a:focus {
+     background-color: #004094a1;
+}
+
+.overlay .closebtn {
+     position: absolute;
+     padding: 0 0.4em;
+     top: 0.01em;
+     right: 0.01em;
+     font-size: 4em;
+}
+
+.overlay .closebtn:hover, .overlay .closebtn:focus {
+     background-color: inherit;
+     color: #000;
+}
+
+#menu {
+     background: linear-gradient(to bottom right, #33d6f0, #0076dd);
+     border-radius: 20px;
+}
+
+/* the bit at the top of the page (no hover) */
+#banner {
+     background-color: royalblue;
+     color: seashell;
+     margin-bottom: -1px;
+     text-align: center;
+}
+
+#dates {
+     font-size: 2em;
+}
+
+#banner img {
+     height: 12em;
+}
+
+#banner p {
+     letter-spacing: 1px;
+}
+
+/* first section */
+#summary {
+     background-color: rgb(163, 219, 49);
+     padding-bottom: 4em;
+}
+
+#summary h2 {
+     text-align: center;
+}
+
+/* second (main) section */
+#mainInfo {
+     background-color: rgb(253, 205, 47);
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     padding-bottom: 4em;
+}
+
+#mainInfo h2 {
+     width: 100%;
+     padding-bottom: 1em;
+     text-align: center;
+}
+
+#mainInfo h3 {
+     text-align: center;
+}
+
+#mainInfo > div {
+     display: flex;
+     flex-direction: column;
+}
+
+.mainInfoDisplay {
+     display: flex;
+     justify-content: space-evenly;
+}
+
+.mainInfoDisplay a, .mainInfoDisplay p {
+     width: 40%;
+     align-self: center;
+}
+
+.mainInfoDisplay p {
+     text-align: justify;
+}
+
+.mainInfoDisplay a img {
+     border-radius: 8px;
+     margin: 1em 0;
+     width: 100%;
+}
+
+.infoLink {
+     width: 40%;
+     padding: 0.8em 2em;
+     margin-bottom: 2.5em;
+     color: white;
+     background-color: rgba(142, 62, 218, 0.75);
+     border-radius: 8px;
+     justify-self: flex-end;
+     align-self: center;
+     text-align: center;
+}
+
+.infoLink:hover {
+     background-color: darkorange;
+     transition: 0.2s;
+}
+
+.tabRow {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     width: 100%;
+     height: 44px;
+     margin-bottom: 2em;
+}
+
+#mainInfo .infoContainer {
+     width: 100%;
+}
+
+.tabRow a div {
+     width: 100%;
+     margin: 0;
+}
+
+.tabRow a {
+     width: 30%;
+}
+
+#mainInfo .infoContainer ul {
+     list-style: none;
+     padding: 0;
+}
+
+#mainInfo .infoContainer li {
+     background-color: rgb(141, 199, 26);
+     border-radius: 8px;
+     width: 100%;
+     padding: 1em;
+     margin: 1em 0;
+}
+
+#mainInfo li summary {
+     font-size: 1.2em;
+}
+
+#mainInfo .itemDesc {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+#mainInfo .itemDesc img {
+     border-radius: 50%;
+     width: 30%;
+     margin-top: 1em;
+}
+
+#mainInfo .itemDesc p {
+     width: 67%;
+}
+
+#prizeList {
+     line-height: 1.3em;
+     letter-spacing: 0.1px;
+}
+
+#mainInfo #schedSmall {
+     display: none;
+}
+
+#mainInfo iframe {
+     align-self: center;
+}
+
+
+
+/* finding us section*/
+#contact {
+     background-color: lightcoral;
+     text-align: center;
+}
+
+#contact address {
+     line-height: 2em;
+     font-size: 1.1em;
+     margin-bottom: 0.8em;
+}
+
+#socialMedia a {
+     color: white;
+     font-size: 2em;
+     padding: 0 1em;
+}
+
+#socialMedia a:nth-child(2) {
+     border-left: 1px dashed black;
+     border-right: 1px dashed black;
+}
+
+/* copyright bit */
 footer {
-
+     background-color: inherit;
+     height: 4em;
+     font-size: 13px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     color: seashell;
 }
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+footer p {
+     padding: 0.1em 0;
+     margin: 0;
+     line-height: normal;
+}
+
+footer a {
+     color: rgb(253, 205, 47); 
+}
+
+/* SVG stuff */
+
+#trans1, #trans2, #trans3 {
+     height: 5em;
+     width: 100%;
+     justify-content: center;
+}
+
+#trans2, #trans3 {
+     display: flex;
+}
+
+#trans1 img, #trans2 img, #trans3 img {
+     width: 100%;
+     height: 100%;
+}
+
+/* multiple bits + other */
+
+#banner, #summary, #contact {
+     padding: 0 20%;
+}
+
+#mainInfo {
+     padding: 0 15%;
+}
+
+#banner {
+     padding-top: 10em;
+}
+
+#summary, #mainInfo {
+     padding-bottom: 4em;
+}
+
+#contact {
+     padding-bottom: 5em;
+}
+
+/* responsive bits */
+
+@media screen and (min-width: 1600px) {
+     .overlay-content {
+          width: 30em;
+     }
+}
+
+@media screen and (max-width: 1200px) {
+     h2 {
+          font-size: 2.5em;
+     }
+     
+     #mainInfo > div {
+          width: 100%;
+     }
+
+     .mainInfoDisplay {
+          flex-wrap: wrap;
+     }
+
+     .mainInfoDisplay a, .mainInfoDisplay p {
+          width: 100%;
+     }
+
+     #banner img {
+          width: 100%;
+          height: auto;
+     }
+
+     #banner, #summary, #contact {
+          padding: 0 10%;
+     }
+
+     #banner {
+          padding-top: 5em;
+     }
+
+     #summary, #mainInfo {
+          padding-bottom: 4em;
+     }
+
+     #contact {
+          padding-bottom: 5em;
+     }
+}
+
+@media screen and (max-width: 900px) {
+
+     .infoLink {
+          align-self: center;
+          text-align: center;
+          width: 80%;
+     }
+
+     #dates {
+          font-size: 1.5em;
+          text-align: center;
+     }
+
+     #mainInfo #schedBig {
+          display: none;
+     }
+
+     #mainInfo #schedSmall {
+          display: inherit;
+     }
+
+     #mainInfo .itemDesc {
+          flex-wrap: wrap;
+     }
+
+     #mainInfo .itemDesc {
+          justify-content: center;
+          align-items: center;
+     }
+
+     #mainInfo .itemDesc img {
+          width: 80%;
+     }
+
+     #mainInfo .itemDesc p {
+          width: 100%;
+     }
+}
+
+@media screen and (max-width: 600px) {
+     p, #summary a {
+          font-size: 1em;
+     }
+
+     .tabRow {
+          height: fit-content;
+     }
+
+     .tabRow a {
+          width: 100%;
+          margin: 0.5em 0;
+     }
+
+     #socialMedia a {
+          padding: 0 0.5em;
+     }
+
+     #mainInfo .itemDesc img {
+          width: 100%;
+     }
+}
+
+@media screen and (max-width: 450px) {
+     .overlay-content {
+          width: 100%;
+     }
+
+     #menu {
+          border-radius: 0;
+     }
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>SLFest 2022 | Vendors</title>
+
+		<!-- external CSS link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://kit.fontawesome.com/48d97972cb.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<!-- Header -->
+		<header id="header" class="alt">
+			<h1><a href="index.html">SLF22 | Vendors</a></h1>
+			<nav>
+				<a href="#menu" onclick="openNav()">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<div id="myNav" class="overlay">
+			<nav id="menu" class="overlay-content ">
+				<div class="inner">
+					<h2>Menu</h2>
+					<a href="index.html">Home</a>
+					<a href="calendar.html">Calendar</a>
+					<a href="vendors.html">Vendor List</a>
+					<a href="competitions.html">Competitions</a>
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				</div>
+			</nav>
+		</div>
+
+		<!-- Banner -->
+		<section id="banner">
+			<div class="inner">
+				<img src="default-monochrome.svg" alt="summer lake fest 2022 logo">
+				<p id="dates">July 23 - 31</p>
+				<p>A week of refreshing summer fun: food, music, dancing, competitions, and other events, all in the heart of the city!</p>
+			</div>
+		</section>
+
+		<div id="trans1"><img src="transShape1.svg" alt="style element"></div>
+		
+		<section id="summary">
+			<h2>Vendors</h2>
+			<p>Summer Lake Fest 2022 is proud to host booths from a wide variety of local businesses. Whether you're hungry or thirsty, looking for a new look, or want to experience something special, we've got you covered! Take a look at our vendor list to see who exactly we've invited this year.</p>
+		</section>
+
+		<div id="trans2"><img src="transShape2_ar.svg" alt="style element"><img src="transShape2_a.svg" alt="style element"></div>
+			
+		<section id="mainInfo">
+			<h2>Vendor List</h2>
+			<div class="tabRow">
+				<a href="javascript:void(0)" onclick="openCity(event, 'Food');">
+				  <div class="tablink infoLink">Food</div>
+				</a>
+				<a href="javascript:void(0)" onclick="openCity(event, 'Items');">
+				  <div class="tablink infoLink">Items</div>
+				</a>
+				<a href="javascript:void(0)" onclick="openCity(event, 'Experiences');">
+				  <div class="tablink infoLink">Experiences</div>
+				</a>
+			</div>
+			<div id="Food" class="infoContainer city" style="display:none">
+				<h3>Food</h3>
+				<ul>
+					<li>
+						<details>
+							<summary>Farmer Neta: Fresh Summer Fruit</summary>
+							<div class="itemDesc">
+								<img src="fruits.jpg" alt="fruit stand">
+								<p>Neta is a local farmer focused on sustainability and organic food production. She is excited to share her fresh in-season fruits, along with some special treats, like candied berries and peels!</p>
+							</div>
+						</details>
+					</li>
+					<li>
+						<details>
+							<summary>Generous Jin's Huge Dumplings</summary>
+							<p>These dumplings will take you from starving to full in no time, and it'll be a delicious ride the whole way! Take your pick of steamed or fried buns, and make sure try Jin's soup buns, based on a family recipe.</p>
+						</details>
+					</li>
+					<li>
+						<details>
+							<summary>Black Fox - Italian Restaurant</summary>
+							<div class="itemDesc">
+								<img src="gelato.jpg" alt="gelato cone">
+								<p>The famous Italian restaurant, here with a booth to share their new street food creations, exclusively debuting at SLFest 2022! They're bringing handcrafted pizza al taglio (pizza in rectangles!), fresh fried calamari, and special gelato flavours to cool you down.</p>
+							</div>
+						</details>
+					</li>
+					<li>
+						<details>
+							<summary>Halo-halo by Angeline</summary>
+							<p>Angeline, of Angeline's Place fame, is offering a variety of her renowned halo-halo, a delicious sweet treat from the Philipines. Don't miss this chance to try out this great dessert - it's a Summer Lake Fest exclusive from Angeline!</p>
+						</details>
+					</li>
+				</ul>
+			</div>
+			
+			<div id="Items" class="infoContainer city" style="display:none">
+				<h3>Items</h3>
+				<ul>
+					<li>
+						<details>
+							<summary>Antiques</summary>
+							<p>Mr. Dirks' antiques will intrigue you and fill you with wonder at every turn. He is offering a curated selection for Summer Lake Fest 2022 - don't miss your chance to get something special!</p>
+						</details>
+					</li>
+					<li>
+						<details>
+							<summary>Darla's Designs</summary>
+							<div class="itemDesc">
+								<img src="clothes.jpg" alt="woman browsing clothes">
+								<p>Darla has been sewing for most of her life, and has been running her own clothing business for over a decade now. She is looking forward to sharing some of her most popular designs at Summer Lake Fest!</p>
+							</div>
+						</details>
+					</li>
+					<li>
+						<details>
+							<summary>Meadowpleasant Organic Soaps</summary>
+							<p>Carefully handcrafted soaps made only with organic ingredients. You can't go wrong with the delightful scents, sustainable packaging, and beautiful shapes and colours!</p>
+						</details>
+					</li>
+					<li>
+						<details>
+							<summary>Lukas Walker: Painter and Landscape Artist</summary>
+							<div class="itemDesc">
+								<img src="painter.jpg" alt="man painting">
+								<p>Looking for the perfect painting to hang in your home? Lukas Walker specialises in abstract works, and enjoys making landscapes from time to time. He is also happy to take commissions!</p>
+							</div>
+						</details>
+					</li>
+				</ul>
+			</div>
+			
+			<div id="Experiences" class="infoContainer city" style="display:none">
+				<h3>Experiences</h3>
+				<ul>
+					<li>
+						<details>
+							<summary>Festive Facepainting</summary>
+							<div class="itemDesc">
+								<img src="facepainting.jpg" alt="facepainting">
+								<p>Summer Lake Fest's very own Audrey is back again this year to brighten up your day with her amazing facepainting!</p>
+							</div>
+						</details>
+					</li>
+					<li>
+						<details>
+							<summary>Walking Tours with Khari</summary>
+							<p>Discover the heart of the city with Khari, a librarian who fell in love with the city when he moved here two decades ago. He is energetic, passionate, and deeply knowledgeable: the perfect guide!</p>
+						</details>
+					</li>
+					<li>
+						<details>
+							<summary>Miss Catrina's Divination</summary>
+							<div class="itemDesc">
+								<img src="tarot.jpg" alt="tarot cards on table">
+								<p>Interested in understanding what the stars have in store for you? Want to learn the secrets of the cards? Miss Catrina is here to help guide you through it all. She can read your birth chart and interpret tarot cards, tea leaves, and the lines of your palms.</p>
+							</div>
+						</details>
+					</li>
+					<li>
+						<details>
+							<summary>Forward Prints Custom Apparel</summary>
+							<p>Forward Prints are here to make custom shirts, hats, mugs, and other items for you on the spot. Simply use their app to create a design, or send in one you've created, and they'll print it for you!</p>
+						</details>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<div id="trans3"><img src="transShape2_b.svg" alt="style element"><img src="transShape2_br.svg" alt="style element"></div>
+
+		<section id="contact">
+			<h2>Finding Us</h2>
+			<p>Summer Lake Fest 2022 takes place on <em>Lakeview Avenue</em>, between Maple Street and Williams Road.</p>
+			<h3>Contact</h3>
+			<address>
+				<i class="fa-solid fa-phone-flip"></i> 514-123-1234<br>
+				<i class="fa-solid fa-envelope"></i> contact@summerlakefest.com
+			</address>
+			<div id="socialMedia">
+				<a href="#"><i class="fa-brands fa-twitter"></i></a>
+				<a href="#"><i class="fa-brands fa-instagram"></i></a>
+				<a href="#"><i class="fa-brands fa-facebook"></i></a>
+			</div>
+		</section>
+
+		<footer>
+			<p>Design &copy; Alex</p>
+		</footer>
+
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>

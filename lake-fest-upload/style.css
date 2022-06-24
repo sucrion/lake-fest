@@ -349,11 +349,22 @@ nav a {
 footer {
      background-color: inherit;
      height: 4em;
-     font-size: small;
+     font-size: 13px;
      display: flex;
+     flex-direction: column;
      justify-content: center;
      align-items: center;
      color: seashell;
+}
+
+footer p {
+     padding: 0.1em 0;
+     margin: 0;
+     line-height: normal;
+}
+
+footer a {
+     color: rgb(253, 205, 47); 
 }
 
 /* SVG stuff */

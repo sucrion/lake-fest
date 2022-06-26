@@ -9,7 +9,7 @@ This is a demo site for an event - a summer lake festival. It features a variety
 
 **Tech used:** HTML, CSS, JavaScript, Photoshop, Inkscape
 
-The site was mostly built from scratch and by hand using HTML, CSS, and JS. The images were edited in Photoshop and style elements were created using Inkscape.
+The site was mostly built from scratch and written by hand using HTML, CSS, and JS (with the exception of the menu JS). The images were edited in Photoshop and style elements were created using Inkscape.
 
 ## Optimizations
 
